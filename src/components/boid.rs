@@ -12,7 +12,8 @@ impl Default for Boid {
     fn default() -> Self {
         Boid {
             movement_speed: BOID_MOVEMENT_SPEED,
-            direction: Vec2::new(rand::random(), rand::random()).normalize(),
+            direction: Vec2::new(rand::random_range(-1.0..1.0), rand::random_range(-1.0..1.0))
+                .normalize(),
         }
     }
 }
