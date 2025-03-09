@@ -1,7 +1,7 @@
 use bevy::prelude::*;
 use bevy_boids::{BoidsPlugin, components::boid::Boid};
 
-const BOID_AMOUNT: u8 = 50;
+const BOID_AMOUNT: u8 = 100;
 const BOID_SIZE: f32 = 7.0;
 
 fn main() {
