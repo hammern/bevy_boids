@@ -15,12 +15,7 @@ pub struct Boid {
 impl Default for Boid {
     fn default() -> Self {
         Boid {
-            velocity: Vec3::new(
-                rand::random_range(-1.0..1.0),
-                rand::random_range(-1.0..1.0),
-                0.0,
-            )
-            .normalize(),
+            velocity: Vec3::new(1.0, 1.0, 0.0).normalize(),
             visual_range: 40.0,
             protected_range: 24.0,
             centering_factor: 0.0005,
